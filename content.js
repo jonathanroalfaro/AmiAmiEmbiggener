@@ -19,6 +19,13 @@
 document.addEventListener("keydown", (event) => {
     if (!["ArrowRight", "ArrowLeft"].includes(event.key)) return;
 
+    // Don't hijack arrow keys while the user is typing in a form field
+    const target = event.target;
+    if (target instanceof Element &&
+        (target.matches("input, textarea, select") || target.isContentEditable)) {
+      return;
+    }
+
     const url = new URL(window.location.href);
     const params = url.searchParams;
     const currentPage = parseInt(params.get("pagecnt")) || 1;
