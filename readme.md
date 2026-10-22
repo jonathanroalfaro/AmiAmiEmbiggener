@@ -8,6 +8,11 @@ Impulse buy more plastic toys you don't need by improving the AmiAmi browsing ex
   - Because clicking "View all pictures" is annoying.
 - Keyboard navigation added.
   - Left/Right arrow keys take you to the previous/next page of items.
+- Order history can be sorted by release date or price
+  - A sort bar above your orders sorts them ascending, click again to reverse. Your choice is remembered and follows you between the All, Open and Shipped tabs.
+  - A divider line separates each release month, so you can see what's coming out when.
+  - Release dates are shown in one format (`2027/12` instead of a mix of `Dec-2027` and `2027/12`).
+  - Orders with no usable date or price go to the end. Reset restores AmiAmi's own order.
 
 
 ## Example
